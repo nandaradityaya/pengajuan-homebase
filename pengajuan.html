@@ -783,7 +783,8 @@
                   nam. Eum atque sapiente perspiciatis saepe!</div>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+                  data-bs-target="#modalViewDetails">Back</button>
               </div>
             </div>
           </div>
@@ -795,10 +796,15 @@
           <div class="modal-dialog modal-dialog-scrollable">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="modalViewDetailsLabel">Tracking Approval</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h5 class="modal-title" id="modalViewDetailsLabel">View Detail</h5>
+
               </div>
               <div class="modal-body">
+                <!-- <a data-bs-toggle="modal" data-bs-target="#trackingApproval" type="button"
+                  class="d-flex justify-content-center"><span style="color: #ffc107"><i
+                      class="lni lni-warning me-1 font-18"></i></span>Show
+                  Tracking Approval
+                  <span style="color: #ffc107"><i class="lni lni-warning ms-1 font-18"></i></span></a> -->
                 <div class="row ">
                   <div class="col-lg-6 col-md-12 col-sm-12 mb-3">
                     <label for="disabledNIK">NIK</label>
@@ -893,7 +899,19 @@
                 </div>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <!-- <a data-bs-toggle="modal" data-bs-target="#trackingApproval" type="button"
+                  class="d-flex justify-content-end  me-2"><span style="color: #ffc107"><i
+                      class="lni lni-warning me-1 font-18"></i></span>Show
+                  Tracking Approval
+                  <span style="color: #ffc107"><i class="lni lni-warning ms-1 font-18"></i></span></a> -->
+                <!-- <button type="button" class="btn btn-secondary ms-auto" data-bs-dismiss="modal">Close</button> -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                  data-bs-target="#trackingApproval"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" class="feather feather-eye text-pirmary me-1">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>Show Tracking Approval</button>
                 <!-- edit button will showing when status is "open" -->
                 <a href="form-pengajuan.html" type="button" class="btn btn-warning">Edit</a>
               </div>
