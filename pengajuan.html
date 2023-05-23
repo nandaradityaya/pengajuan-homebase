@@ -8,11 +8,11 @@
   <!--favicon-->
   <link rel="icon" href="assets/images/logo-epm.png" type="image/png" />
   <!--plugins-->
-  <link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet" />
+  <!-- <link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet" /> -->
   <link href="assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" />
-  <link href="assets/plugins/highcharts/css/highcharts.css" rel="stylesheet" />
-  <link href="assets/plugins/vectormap/jquery-jvectormap-2.0.2.css" rel="stylesheet" />
   <link href="assets/plugins/metismenu/css/metisMenu.min.css" rel="stylesheet" />
+  <!-- <link href="assets/plugins/highcharts/css/highcharts.css" rel="stylesheet" />
+  <link href="assets/plugins/vectormap/jquery-jvectormap-2.0.2.css" rel="stylesheet" /> -->
   <link href="assets/plugins/datatable/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
   <!-- loader-->
   <link href="assets/css/pace.min.css" rel="stylesheet" />
@@ -24,8 +24,8 @@
   <link href="assets/css/app.css" rel="stylesheet" />
   <link href="assets/css/icons.css" rel="stylesheet" />
   <!-- Theme Style CSS -->
-  <link rel="stylesheet" href="assets/css/dark-theme.css" />
-  <link rel="stylesheet" href="assets/css/semi-dark.css" />
+  <!-- <link rel="stylesheet" href="assets/css/dark-theme.css" />
+  <link rel="stylesheet" href="assets/css/semi-dark.css" /> -->
   <link rel="stylesheet" href="assets/css/header-colors.css" />
   <link rel="stylesheet" href="assets/libraries/gijgo/css/gijgo.min.css">
   <title>Web Title</title>
@@ -81,63 +81,12 @@
           <div class="mobile-toggle-menu"><i class="bx bx-menu"></i></div>
 
           <div class="top-menu ms-auto">
-            <ul class="navbar-nav align-items-center" style="display: none">
-              <li class="nav-item mobile-search-icon">
-                <a class="nav-link" href="javascript:;">
-                  <i class="bx bx-search"></i>
-                </a>
-              </li>
+            <ul class="navbar-nav align-items-center" style="display: none;">
               <li class="nav-item dropdown dropdown-large">
-                <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="#" role="button"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  <i class="bx bx-category"></i>
-                </a>
-                <div class="dropdown-menu dropdown-menu-end">
-                  <div class="row row-cols-3 g-3 p-3">
-                    <div class="col text-center">
-                      <div class="app-box mx-auto bg-gradient-cosmic text-white">
-                        <i class="bx bx-group"></i>
-                      </div>
-                      <div class="app-title">Teams</div>
-                    </div>
-                    <div class="col text-center">
-                      <div class="app-box mx-auto bg-gradient-burning text-white">
-                        <i class="bx bx-atom"></i>
-                      </div>
-                      <div class="app-title">Projects</div>
-                    </div>
-                    <div class="col text-center">
-                      <div class="app-box mx-auto bg-gradient-lush text-white">
-                        <i class="bx bx-shield"></i>
-                      </div>
-                      <div class="app-title">Tasks</div>
-                    </div>
-                    <div class="col text-center">
-                      <div class="app-box mx-auto bg-gradient-kyoto text-dark">
-                        <i class="bx bx-notification"></i>
-                      </div>
-                      <div class="app-title">Feeds</div>
-                    </div>
-                    <div class="col text-center">
-                      <div class="app-box mx-auto bg-gradient-blues text-dark">
-                        <i class="bx bx-file"></i>
-                      </div>
-                      <div class="app-title">Files</div>
-                    </div>
-                    <div class="col text-center">
-                      <div class="app-box mx-auto bg-gradient-moonlit text-white">
-                        <i class="bx bx-filter-alt"></i>
-                      </div>
-                      <div class="app-title">Alerts</div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="nav-item dropdown dropdown-large">
-                <a class="nav-link dropdown-toggle dropdown-toggle-nocaret position-relative" href="#" role="button"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  <span class="alert-count">7</span>
-                  <i class="bx bx-bell"></i>
+                <a class="nav-link dropdown-toggle dropdown-toggle-nocaret position-relative" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <!-- <span class="alert-count">7</span> -->
+                  <!-- <i class="bx bx-bell"></i> -->
                 </a>
                 <div class="dropdown-menu dropdown-menu-end">
                   <a href="javascript:;">
@@ -149,139 +98,7 @@
                     </div>
                   </a>
                   <div class="header-notifications-list">
-                    <a class="dropdown-item" href="javascript:;">
-                      <div class="d-flex align-items-center">
-                        <div class="notify bg-light-primary text-primary">
-                          <i class="bx bx-group"></i>
-                        </div>
-                        <div class="flex-grow-1">
-                          <h6 class="msg-name">
-                            New Customers<span class="msg-time float-end">14 Sec ago</span>
-                          </h6>
-                          <p class="msg-info">5 new user registered</p>
-                        </div>
-                      </div>
-                    </a>
-                    <a class="dropdown-item" href="javascript:;">
-                      <div class="d-flex align-items-center">
-                        <div class="notify bg-light-danger text-danger">
-                          <i class="bx bx-cart-alt"></i>
-                        </div>
-                        <div class="flex-grow-1">
-                          <h6 class="msg-name">
-                            New Orders
-                            <span class="msg-time float-end">2 min ago</span>
-                          </h6>
-                          <p class="msg-info">You have recived new orders</p>
-                        </div>
-                      </div>
-                    </a>
-                    <a class="dropdown-item" href="javascript:;">
-                      <div class="d-flex align-items-center">
-                        <div class="notify bg-light-success text-success">
-                          <i class="bx bx-file"></i>
-                        </div>
-                        <div class="flex-grow-1">
-                          <h6 class="msg-name">
-                            24 PDF File<span class="msg-time float-end">19 min ago</span>
-                          </h6>
-                          <p class="msg-info">The pdf files generated</p>
-                        </div>
-                      </div>
-                    </a>
-                    <a class="dropdown-item" href="javascript:;">
-                      <div class="d-flex align-items-center">
-                        <div class="notify bg-light-warning text-warning">
-                          <i class="bx bx-send"></i>
-                        </div>
-                        <div class="flex-grow-1">
-                          <h6 class="msg-name">
-                            Time Response
-                            <span class="msg-time float-end">28 min ago</span>
-                          </h6>
-                          <p class="msg-info">
-                            5.1 min avarage time response
-                          </p>
-                        </div>
-                      </div>
-                    </a>
-                    <a class="dropdown-item" href="javascript:;">
-                      <div class="d-flex align-items-center">
-                        <div class="notify bg-light-info text-info">
-                          <i class="bx bx-home-circle"></i>
-                        </div>
-                        <div class="flex-grow-1">
-                          <h6 class="msg-name">
-                            New Product Approved
-                            <span class="msg-time float-end">2 hrs ago</span>
-                          </h6>
-                          <p class="msg-info">
-                            Your new product has approved
-                          </p>
-                        </div>
-                      </div>
-                    </a>
-                    <a class="dropdown-item" href="javascript:;">
-                      <div class="d-flex align-items-center">
-                        <div class="notify bg-light-danger text-danger">
-                          <i class="bx bx-message-detail"></i>
-                        </div>
-                        <div class="flex-grow-1">
-                          <h6 class="msg-name">
-                            New Comments
-                            <span class="msg-time float-end">4 hrs ago</span>
-                          </h6>
-                          <p class="msg-info">
-                            New customer comments recived
-                          </p>
-                        </div>
-                      </div>
-                    </a>
-                    <a class="dropdown-item" href="javascript:;">
-                      <div class="d-flex align-items-center">
-                        <div class="notify bg-light-success text-success">
-                          <i class="bx bx-check-square"></i>
-                        </div>
-                        <div class="flex-grow-1">
-                          <h6 class="msg-name">
-                            Your item is shipped
-                            <span class="msg-time float-end">5 hrs ago</span>
-                          </h6>
-                          <p class="msg-info">
-                            Successfully shipped your item
-                          </p>
-                        </div>
-                      </div>
-                    </a>
-                    <a class="dropdown-item" href="javascript:;">
-                      <div class="d-flex align-items-center">
-                        <div class="notify bg-light-primary text-primary">
-                          <i class="bx bx-user-pin"></i>
-                        </div>
-                        <div class="flex-grow-1">
-                          <h6 class="msg-name">
-                            New 24 authors<span class="msg-time float-end">1 day ago</span>
-                          </h6>
-                          <p class="msg-info">
-                            24 new authors joined last week
-                          </p>
-                        </div>
-                      </div>
-                    </a>
-                    <a class="dropdown-item" href="javascript:;">
-                      <div class="d-flex align-items-center">
-                        <div class="notify bg-light-warning text-warning">
-                          <i class="bx bx-door-open"></i>
-                        </div>
-                        <div class="flex-grow-1">
-                          <h6 class="msg-name">
-                            Defense Alerts
-                            <span class="msg-time float-end">2 weeks ago</span>
-                          </h6>
-                          <p class="msg-info">45% less alerts last 4 weeks</p>
-                        </div>
-                      </div>
-                    </a>
+
                   </div>
                   <a href="javascript:;">
                     <div class="text-center msg-footer">
@@ -291,10 +108,10 @@
                 </div>
               </li>
               <li class="nav-item dropdown dropdown-large">
-                <a class="nav-link dropdown-toggle dropdown-toggle-nocaret position-relative" href="#" role="button"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  <span class="alert-count">8</span>
-                  <i class="bx bx-comment"></i>
+                <a class="nav-link dropdown-toggle dropdown-toggle-nocaret position-relative" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <!-- <span class="alert-count">8</span> -->
+                  <!-- <i class="bx bx-comment"></i> -->
                 </a>
                 <div class="dropdown-menu dropdown-menu-end">
                   <a href="javascript:;">
@@ -306,178 +123,7 @@
                     </div>
                   </a>
                   <div class="header-message-list">
-                    <a class="dropdown-item" href="javascript:;">
-                      <div class="d-flex align-items-center">
-                        <div class="user-online">
-                          <img src="assets/images/avatars/avatar-1.png" class="msg-avatar" alt="user avatar" />
-                        </div>
-                        <div class="flex-grow-1">
-                          <h6 class="msg-name">
-                            Daisy Anderson
-                            <span class="msg-time float-end">5 sec ago</span>
-                          </h6>
-                          <p class="msg-info">The standard chunk of lorem</p>
-                        </div>
-                      </div>
-                    </a>
-                    <a class="dropdown-item" href="javascript:;">
-                      <div class="d-flex align-items-center">
-                        <div class="user-online">
-                          <img src="assets/images/avatars/avatar-2.png" class="msg-avatar" alt="user avatar" />
-                        </div>
-                        <div class="flex-grow-1">
-                          <h6 class="msg-name">
-                            Althea Cabardo
-                            <span class="msg-time float-end">14 sec ago</span>
-                          </h6>
-                          <p class="msg-info">
-                            Many desktop publishing packages
-                          </p>
-                        </div>
-                      </div>
-                    </a>
-                    <a class="dropdown-item" href="javascript:;">
-                      <div class="d-flex align-items-center">
-                        <div class="user-online">
-                          <img src="assets/images/avatars/avatar-3.png" class="msg-avatar" alt="user avatar" />
-                        </div>
-                        <div class="flex-grow-1">
-                          <h6 class="msg-name">
-                            Oscar Garner
-                            <span class="msg-time float-end">8 min ago</span>
-                          </h6>
-                          <p class="msg-info">
-                            Various versions have evolved over
-                          </p>
-                        </div>
-                      </div>
-                    </a>
-                    <a class="dropdown-item" href="javascript:;">
-                      <div class="d-flex align-items-center">
-                        <div class="user-online">
-                          <img src="assets/images/avatars/avatar-4.png" class="msg-avatar" alt="user avatar" />
-                        </div>
-                        <div class="flex-grow-1">
-                          <h6 class="msg-name">
-                            Katherine Pechon
-                            <span class="msg-time float-end">15 min ago</span>
-                          </h6>
-                          <p class="msg-info">
-                            Making this the first true generator
-                          </p>
-                        </div>
-                      </div>
-                    </a>
-                    <a class="dropdown-item" href="javascript:;">
-                      <div class="d-flex align-items-center">
-                        <div class="user-online">
-                          <img src="assets/images/avatars/avatar-5.png" class="msg-avatar" alt="user avatar" />
-                        </div>
-                        <div class="flex-grow-1">
-                          <h6 class="msg-name">
-                            Amelia Doe
-                            <span class="msg-time float-end">22 min ago</span>
-                          </h6>
-                          <p class="msg-info">
-                            Duis aute irure dolor in reprehenderit
-                          </p>
-                        </div>
-                      </div>
-                    </a>
-                    <a class="dropdown-item" href="javascript:;">
-                      <div class="d-flex align-items-center">
-                        <div class="user-online">
-                          <img src="assets/images/avatars/avatar-6.png" class="msg-avatar" alt="user avatar" />
-                        </div>
-                        <div class="flex-grow-1">
-                          <h6 class="msg-name">
-                            Cristina Jhons
-                            <span class="msg-time float-end">2 hrs ago</span>
-                          </h6>
-                          <p class="msg-info">
-                            The passage is attributed to an unknown
-                          </p>
-                        </div>
-                      </div>
-                    </a>
-                    <a class="dropdown-item" href="javascript:;">
-                      <div class="d-flex align-items-center">
-                        <div class="user-online">
-                          <img src="assets/images/avatars/avatar-7.png" class="msg-avatar" alt="user avatar" />
-                        </div>
-                        <div class="flex-grow-1">
-                          <h6 class="msg-name">
-                            James Caviness
-                            <span class="msg-time float-end">4 hrs ago</span>
-                          </h6>
-                          <p class="msg-info">The point of using Lorem</p>
-                        </div>
-                      </div>
-                    </a>
-                    <a class="dropdown-item" href="javascript:;">
-                      <div class="d-flex align-items-center">
-                        <div class="user-online">
-                          <img src="assets/images/avatars/avatar-8.png" class="msg-avatar" alt="user avatar" />
-                        </div>
-                        <div class="flex-grow-1">
-                          <h6 class="msg-name">
-                            Peter Costanzo
-                            <span class="msg-time float-end">6 hrs ago</span>
-                          </h6>
-                          <p class="msg-info">
-                            It was popularised in the 1960s
-                          </p>
-                        </div>
-                      </div>
-                    </a>
-                    <a class="dropdown-item" href="javascript:;">
-                      <div class="d-flex align-items-center">
-                        <div class="user-online">
-                          <img src="assets/images/avatars/avatar-9.png" class="msg-avatar" alt="user avatar" />
-                        </div>
-                        <div class="flex-grow-1">
-                          <h6 class="msg-name">
-                            David Buckley
-                            <span class="msg-time float-end">2 hrs ago</span>
-                          </h6>
-                          <p class="msg-info">
-                            Various versions have evolved over
-                          </p>
-                        </div>
-                      </div>
-                    </a>
-                    <a class="dropdown-item" href="javascript:;">
-                      <div class="d-flex align-items-center">
-                        <div class="user-online">
-                          <img src="assets/images/avatars/avatar-10.png" class="msg-avatar" alt="user avatar" />
-                        </div>
-                        <div class="flex-grow-1">
-                          <h6 class="msg-name">
-                            Thomas Wheeler
-                            <span class="msg-time float-end">2 days ago</span>
-                          </h6>
-                          <p class="msg-info">
-                            If you are going to use a passage
-                          </p>
-                        </div>
-                      </div>
-                    </a>
-                    <a class="dropdown-item" href="javascript:;">
-                      <div class="d-flex align-items-center">
-                        <div class="user-online">
-                          <img src="assets/images/avatars/avatar-11.png" class="msg-avatar" alt="user avatar" />
-                        </div>
-                        <div class="flex-grow-1">
-                          <h6 class="msg-name">
-                            Johnny Seitz
-                            <span class="msg-time float-end">5 days ago</span>
-                          </h6>
-                          <p class="msg-info">
-                            All the Lorem Ipsum generators
-                          </p>
-                        </div>
-                      </div>
-                    </a>
+
                   </div>
                   <a href="javascript:;">
                     <div class="text-center msg-footer">
@@ -560,8 +206,7 @@
                     <th>Lokasi Penugasan</th>
                     <th>Status</th>
                     <th>View Details</th>
-                    <th class="text-center">Show Tracking Approval</th>
-                    <th class="text-center">Action</th>
+                    <th class="text-center">Upload Lampiran</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -579,15 +224,8 @@
                     <td><button type="button" class="btn btn-primary btn-sm radius-30 px-4" data-bs-toggle="modal"
                         data-bs-target="#modalViewDetails">View
                         Details</button></td>
-                    <td class="order-actions d-flex justify-content-center"><a type="button"
-                        class="text-success bg-light-success border-0" data-bs-toggle="modal"
-                        data-bs-target="#trackingApproval"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                          height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                          stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye text-success">
-                          <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                          <circle cx="12" cy="12" r="3"></circle>
-                        </svg></a></td>
-                    <td class="order-actions text-center">
+
+                    <td class="order-actions d-flex justify-content-center">
                       <a type="button" data-bs-toggle="modal" data-bs-target="#attachmentRealized"
                         class="text-primary bg-light-primary border-0"><i class="lni lni-upload"></i></a>
                     </td>
@@ -608,14 +246,7 @@
                     <td><button type="button" class="btn btn-primary btn-sm radius-30 px-4" data-bs-toggle="modal"
                         data-bs-target="#modalViewDetails">View
                         Details</button></td>
-                    <td class="order-actions d-flex justify-content-center"><a type="button"
-                        class="text-success bg-light-success border-0" data-bs-toggle="modal"
-                        data-bs-target="#trackingApproval"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                          height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                          stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye text-success">
-                          <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                          <circle cx="12" cy="12" r="3"></circle>
-                        </svg></a></td>
+
                   </tr>
                   <tr>
                     <td>987654321</td>
@@ -631,14 +262,7 @@
                     <td><button type="button" class="btn btn-primary btn-sm radius-30 px-4" data-bs-toggle="modal"
                         data-bs-target="#modalViewDetails">View
                         Details</button></td>
-                    <td class="order-actions d-flex justify-content-center"><a type="button"
-                        class="text-success bg-light-success border-0" data-bs-toggle="modal"
-                        data-bs-target="#trackingApproval"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                          height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                          stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye text-success">
-                          <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                          <circle cx="12" cy="12" r="3"></circle>
-                        </svg></a></td>
+
                   </tr>
                   <tr>
                     <td>987654321</td>
@@ -654,14 +278,7 @@
                     <td><button type="button" class="btn btn-primary btn-sm radius-30 px-4" data-bs-toggle="modal"
                         data-bs-target="#modalViewDetails">View
                         Details</button></td>
-                    <td class="order-actions d-flex justify-content-center"><a type="button"
-                        class="text-success bg-light-success border-0" data-bs-toggle="modal"
-                        data-bs-target="#trackingApproval"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                          height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                          stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye text-success">
-                          <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                          <circle cx="12" cy="12" r="3"></circle>
-                        </svg></a></td>
+
                   </tr>
                   <tr>
                     <td>987654321</td>
@@ -677,14 +294,7 @@
                     <td><button type="button" class="btn btn-primary btn-sm radius-30 px-4" data-bs-toggle="modal"
                         data-bs-target="#modalViewDetails">View
                         Details</button></td>
-                    <td class="order-actions d-flex justify-content-center"><a type="button"
-                        class="text-success bg-light-success border-0" data-bs-toggle="modal"
-                        data-bs-target="#trackingApproval"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                          height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                          stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye text-success">
-                          <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                          <circle cx="12" cy="12" r="3"></circle>
-                        </svg></a></td>
+
 
                   </tr>
 
@@ -699,297 +309,375 @@
                     <th>Lokasi Penugasan</th>
                     <th>Status</th>
                     <th>View Details</th>
-                    <th class="text-center">Show Tracking Approval</th>
-                    <th class="text-center">Action</th>
+                    <th class="text-center">Upload Lampiran</th>
                   </tr>
                 </tfoot>
               </table>
             </div>
           </div>
         </div>
+      </div>
 
-        <!-- Modal Box Tracking Approval -->
-        <div class="modal fade" id="trackingApproval" tabindex="-1" aria-labelledby="trackingApprovalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog modal-xl modal-dialog-scrollable">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="trackingApprovalLabel">Tracking Approval</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <div class="table-responsive">
-                  <table class="table align-middle" style="width:100%">
-
-                    <thead class="table-light">
-                      <tr>
-                        <th>Level</th>
-                        <th>Seq</th>
-                        <th>Employee ID</th>
-                        <th>Name</th>
-                        <th>Approver Type</th>
-                        <th>Job Title</th>
-                        <th>Organization</th>
-                        <th>Status</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>123456789</td>
-                        <td>Jhonny Depp</td>
-                        <td>Approver</td>
-                        <td>Accounting Supervisor</td>
-                        <td>EPM - Training</td>
-                        <td>
-                          <div class="badge rounded-pill text-success bg-light-success p-2 text-uppercase px-3">
-                            Approved</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>2</td>
-                        <td>1</td>
-                        <td>123456789</td>
-                        <td>Haris Nugraha</td>
-                        <td>Approver</td>
-                        <td>Area Business Manager</td>
-                        <td>EPM - Warehouse</td>
-                        <td>
-                          <div class="badge rounded-pill text-warning bg-light-warning p-2 text-uppercase px-3">
-                            In Progress</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>2</td>
-                        <td>1</td>
-                        <td>123456789</td>
-                        <td>Haris Nugraha</td>
-                        <td>Approver</td>
-                        <td>Area Business Manager</td>
-                        <td>EPM - Warehouse</td>
-                        <td>
-                          <div class="badge rounded-pill text-danger bg-light-danger p-2 text-uppercase px-3">
-                            Rejected</div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
+      <!-- Modal Box Tracking Approval -->
+      <div class="modal fade" id="trackingApproval" tabindex="-1" aria-labelledby="trackingApprovalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="trackingApprovalLabel">Tracking Approval</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <!-- timeline item 1 -->
+              <div class="row">
+                <!-- timeline item 1 left dot -->
+                <div class="col-auto text-center flex-column d-none d-sm-flex">
+                  <div class="row h-50">
+                    <div class="col">&nbsp;</div>
+                    <div class="col">&nbsp;</div>
+                  </div>
+                  <h5 class="m-2">
+                    <span class="badge rounded-pill bg-light border">&nbsp;</span>
+                  </h5>
+                  <div class="row h-50">
+                    <div class="col border-end">&nbsp;</div>
+                    <div class="col">&nbsp;</div>
+                  </div>
                 </div>
-                <!-- Reason will showing when status rejected -->
-                <label for="keterangan" class="form-label">Reason</label>
-                <div class="h6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident vel repellat neque
-                  earum quis, sint ducimus blanditiis qui repellendus tenetur praesentium adipisci, nobis consequuntur
-                  nam. Eum atque sapiente perspiciatis saepe!</div>
+                <!-- timeline item 1 event content -->
+                <div class="col py-2">
+                  <div class="card radius-15">
+                    <div class="card-body">
+                      <div class="float-end text-muted">
+                        <div class="badge rounded-pill text-success bg-light-success p-2 text-uppercase px-3">
+                          Approved</div>
+                      </div>
+                      <h6 class="card-title text-muted">Johnny Depp</h6>
+                      <p class="card-text">Accounting Supervisor, <span>EPM - Finance</span></p>
+                      <button class="btn btn-sm btn-outline-secondary" type="button" data-bs-target="#timeline1"
+                        data-bs-toggle="collapse">Show Details ▼</button>
+                      <div class="collapse border" id="timeline1">
+                        <div class="p-2 text-monospace">
+                          <div>Level: 1</div>
+                          <div>Seq: 1</div>
+                          <div>NIK : 180100021</div>
+                          <div>Nama: Johnny Depp</div>
+                          <div>Approver Type: Approver</div>
+                          <div>Job Title: Accounting Supervisor</div>
+                          <div>Departemen: EPM - Finance</div>
+                          <div>Status: <div
+                              class="badge rounded-pill text-success bg-light-success p-2 text-uppercase px-3">
+                              Approved</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
-                  data-bs-target="#modalViewDetails">Back</button>
+              <!--/row-->
+              <!-- timeline item 2 -->
+              <div class="row">
+                <div class="col-auto text-center flex-column d-none d-sm-flex">
+                  <div class="row h-50">
+                    <div class="col border-end">&nbsp;</div>
+                    <div class="col">&nbsp;</div>
+                  </div>
+                  <h5 class="m-2">
+                    <span class="badge rounded-pill bg-primary">&nbsp;</span>
+                  </h5>
+                  <div class="row h-50">
+                    <div class="col border-end">&nbsp;</div>
+                    <div class="col">&nbsp;</div>
+                  </div>
+                </div>
+                <div class="col py-2">
+                  <div class="card border-primary shadow radius-15">
+                    <div class="card-body">
+                      <div class="float-end text-primary">
+                        <div class="badge rounded-pill text-warning bg-light-warning p-2 text-uppercase px-3">
+                          In Progress</div>
+                      </div>
+                      <h6 class="card-title text-primary">Doni Suprapto</h6>
+                      <p class="card-text">Assistant Manager, <span>EPM - Finance</span></p>
+                      <button class="btn btn-sm btn-outline-secondary" type="button" data-bs-target="#timeline2"
+                        data-bs-toggle="collapse">Show Details ▼</button>
+                      <div class="collapse border" id="timeline2">
+                        <div class="p-2 text-monospace">
+                          <div>Level: 2</div>
+                          <div>Seq: 1</div>
+                          <div>NIK : 170100222</div>
+                          <div>Nama: Johnny Depp</div>
+                          <div>Approver Type: Approver</div>
+                          <div>Job Title: Assistant Manager</div>
+                          <div>Departemen: EPM - Finance</div>
+                          <div>Status: <div
+                              class="badge rounded-pill text-warning bg-light-warning p-2 text-uppercase px-3">
+                              In Progress</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
+              <!--/row-->
+              <!-- timeline item 3 -->
+              <div class="row">
+                <div class="col-auto text-center flex-column d-none d-sm-flex">
+                  <div class="row h-50">
+                    <div class="col border-end">&nbsp;</div>
+                    <div class="col">&nbsp;</div>
+                  </div>
+                  <h5 class="m-2">
+                    <span class="badge rounded-pill bg-light border">&nbsp;</span>
+                  </h5>
+                  <div class="row h-50">
+                    <div class="col">&nbsp;</div>
+                    <div class="col">&nbsp;</div>
+                  </div>
+                </div>
+                <div class="col py-2">
+                  <div class="card border-primary shadow radius-15">
+                    <div class="card-body">
+                      <div class="float-end text-primary">
+                        <div class="badge rounded-pill text-danger bg-light-danger p-2 text-uppercase px-3">
+                          Rejected</div>
+                      </div>
+                      <h6 class="card-title text-muted">Sulistyo Sigit</h6>
+                      <p class="card-text">Manager, <span>EPM - Finance</span></p>
+                      <button class="btn btn-sm btn-outline-secondary" type="button" data-bs-target="#timeline3"
+                        data-bs-toggle="collapse">Show Details ▼</button>
+                      <div class="collapse border" id="timeline3">
+                        <div class="p-2 text-monospace">
+                          <div>Level: 3</div>
+                          <div>Seq: 1</div>
+                          <div>NIK : 150100189</div>
+                          <div>Nama: Sulistyo Sigit</div>
+                          <div>Approver Type: Approver</div>
+                          <div>Job Title: Manager</div>
+                          <div>Departemen: EPM - Finance</div>
+                          <div>Status: <div
+                              class="badge rounded-pill text-danger bg-light-danger p-2 text-uppercase px-3">
+                              Rejected</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--/row-->
+              <!-- Reason will showing when status rejected -->
+              <label for="keterangan" class="form-label">Reason</label>
+              <div class="h6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident vel repellat neque
+                earum quis, sint ducimus blanditiis qui repellendus tenetur praesentium adipisci, nobis consequuntur
+                nam. Eum atque sapiente perspiciatis saepe!</div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+                data-bs-target="#modalViewDetails">Back</button>
             </div>
           </div>
         </div>
+      </div>
 
-        <!-- Modal Box View Details -->
-        <div class="modal fade" id="modalViewDetails" tabindex="-1" aria-labelledby="modalViewDetailsLabel"
-          aria-hidden="true">
-          <div class="modal-dialog modal-dialog-scrollable">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalViewDetailsLabel">View Detail</h5>
+      <!-- Modal Box View Details -->
+      <div class="modal fade" id="modalViewDetails" tabindex="-1" aria-labelledby="modalViewDetailsLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalViewDetailsLabel">View Detail</h5>
 
-              </div>
-              <div class="modal-body">
-                <!-- <a data-bs-toggle="modal" data-bs-target="#trackingApproval" type="button"
+            </div>
+            <div class="modal-body">
+              <!-- <a data-bs-toggle="modal" data-bs-target="#trackingApproval" type="button"
                   class="d-flex justify-content-center"><span style="color: #ffc107"><i
                       class="lni lni-warning me-1 font-18"></i></span>Show
                   Tracking Approval
                   <span style="color: #ffc107"><i class="lni lni-warning ms-1 font-18"></i></span></a> -->
-                <div class="row ">
-                  <div class="col-lg-6 col-md-12 col-sm-12 mb-3">
-                    <label for="disabledNIK">NIK</label>
-                    <p class="font-weight-bold">230100022</p>
-                  </div>
-                  <div class="col-lg-6 col-md-12 col-sm-12 mb-3">
-                    <label for="disabledName">Nama</label>
-                    <p class="font-weight-bold">Nanda Raditya</p>
-                  </div>
-                  <div class="col-lg-6 col-md-12 col-sm-12 mb-3">
-                    <label for="disabledHomeBase">Home Base</label>
-                    <p class="font-weight-bold">Surabaya</p>
-                  </div>
-                  <div class="col-lg-6 col-md-12 col-sm-12 mb-3">
-                    <label for="lokasiPenugasan">Lokasi Penugasan</label>
-                    <p class="font-weight-bold">Bandung</p>
-                  </div>
+              <div class="row ">
+                <div class="col-lg-6 col-md-12 col-sm-12 mb-3">
+                  <label for="disabledNIK">NIK</label>
+                  <p class="font-weight-bold">230100022</p>
                 </div>
-                <div class="row">
-                  <div class="col-lg-4 col-md-12 col-sm-12 mb-3">
-                    <div class="filter-awal me-2"><label for="filterDatePengajuan" class="sr-only">Tgl
-                        Keberangkatan</label>
-                      <p class="font-weight-bold">05/19/2023</p>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-md-12 col-sm-12 mb-3">
-                    <div class="filter-awal me-2"><label for="filterDateStartCuti" class="sr-only">Tgl Mulai
-                        Cuti</label>
-                      <p class="font-weight-bold">05/19/2023</p>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-md-12 col-sm-12">
-                    <div class="filter-awal me-2"><label for="filterDateEndCuti" class="sr-only">Tgl Berakhir
-                        Cuti</label>
-                      <p class="font-weight-bold">05/26/2023</p>
-                    </div>
-                  </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 mb-3">
+                  <label for="disabledName">Nama</label>
+                  <p class="font-weight-bold">Nanda Raditya</p>
                 </div>
-                <div class="row mb-3">
-                  <label>Moda Transportasi</label>
-                  <p class="font-weight-bold">Udara</p>
-                  <div class="table-responsive">
-                    <table class="table mb-0">
-                      <thead>
-                        <tr>
-                          <th scope="col">Jenis</th>
-                          <th scope="col">Quantity</th>
-                          <th scope="col">Harga</th>
-                          <th scope="col">Total</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>Tiket Berangkat</td>
-                          <td>2</td>
-                          <td>Rp. 2.500.000</td>
-                          <td>Rp. 5.000.000</td>
-                        </tr>
-                        <tr>
-                          <td>Taxi Berangkat</td>
-                          <td>1</td>
-                          <td>Rp. 90.000</td>
-                          <td>Rp. 90.000</td>
-                        </tr>
-                        <tr>
-                          <td>Tiket Pulang</td>
-                          <td>2</td>
-                          <td>Rp. 2.500.000</td>
-                          <td>Rp. 5.000.000</td>
-                        </tr>
-                        <tr>
-                          <td>Taxi Pulang</td>
-                          <td>1</td>
-                          <td>Rp. 55.000</td>
-                          <td>Rp. 55.000</td>
-                        </tr>
-                        <tr>
-                          <td>Biaya Lainnya...</td>
-                          <td>3</td>
-                          <td>Rp. 20.000</td>
-                          <td>Rp. 60.000</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 mb-3">
+                  <label for="disabledHomeBase">Home Base</label>
+                  <p class="font-weight-bold">Surabaya</p>
                 </div>
-                <div class="row">
-                  <label>Keterangan</label>
-                  <p class="font-weight-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. A temporibus
-                    recusandae excepturi perspiciatis similique assumenda repudiandae, natus explicabo quaerat quam
-                    eveniet est eos nihil, odit numquam! Nihil unde beatae quos?</p>
+                <div class="col-lg-6 col-md-12 col-sm-12 mb-3">
+                  <label for="lokasiPenugasan">Lokasi Penugasan</label>
+                  <p class="font-weight-bold">Bandung</p>
                 </div>
               </div>
-              <div class="modal-footer">
-                <!-- <a data-bs-toggle="modal" data-bs-target="#trackingApproval" type="button"
+              <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-12 mb-3">
+                  <div class="filter-awal me-2"><label for="filterDatePengajuan" class="sr-only">Tgl
+                      Keberangkatan</label>
+                    <p class="font-weight-bold">05/19/2023</p>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 mb-3">
+                  <div class="filter-awal me-2"><label for="filterDateStartCuti" class="sr-only">Tgl Mulai
+                      Cuti</label>
+                    <p class="font-weight-bold">05/19/2023</p>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="filter-awal me-2"><label for="filterDateEndCuti" class="sr-only">Tgl Berakhir
+                      Cuti</label>
+                    <p class="font-weight-bold">05/26/2023</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label>Moda Transportasi</label>
+                <p class="font-weight-bold">Udara</p>
+                <div class="table-responsive">
+                  <table class="table mb-0">
+                    <thead>
+                      <tr>
+                        <th scope="col">Jenis</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Harga</th>
+                        <th scope="col">Total</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Tiket Berangkat</td>
+                        <td>2</td>
+                        <td>Rp. 2.500.000</td>
+                        <td>Rp. 5.000.000</td>
+                      </tr>
+                      <tr>
+                        <td>Taxi Berangkat</td>
+                        <td>1</td>
+                        <td>Rp. 90.000</td>
+                        <td>Rp. 90.000</td>
+                      </tr>
+                      <tr>
+                        <td>Tiket Pulang</td>
+                        <td>2</td>
+                        <td>Rp. 2.500.000</td>
+                        <td>Rp. 5.000.000</td>
+                      </tr>
+                      <tr>
+                        <td>Taxi Pulang</td>
+                        <td>1</td>
+                        <td>Rp. 55.000</td>
+                        <td>Rp. 55.000</td>
+                      </tr>
+                      <tr>
+                        <td>Biaya Lainnya...</td>
+                        <td>3</td>
+                        <td>Rp. 20.000</td>
+                        <td>Rp. 60.000</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="row">
+                <label>Keterangan</label>
+                <p class="font-weight-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. A temporibus
+                  recusandae excepturi perspiciatis similique assumenda repudiandae, natus explicabo quaerat quam
+                  eveniet est eos nihil, odit numquam! Nihil unde beatae quos?</p>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <!-- <a data-bs-toggle="modal" data-bs-target="#trackingApproval" type="button"
                   class="d-flex justify-content-end  me-2"><span style="color: #ffc107"><i
                       class="lni lni-warning me-1 font-18"></i></span>Show
                   Tracking Approval
                   <span style="color: #ffc107"><i class="lni lni-warning ms-1 font-18"></i></span></a> -->
-                <!-- <button type="button" class="btn btn-secondary ms-auto" data-bs-dismiss="modal">Close</button> -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                  data-bs-target="#trackingApproval"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" class="feather feather-eye text-pirmary me-1">
-                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                    <circle cx="12" cy="12" r="3"></circle>
-                  </svg>Show Tracking Approval</button>
-                <!-- edit button will showing when status is "open" -->
-                <a href="form-pengajuan.html" type="button" class="btn btn-warning">Edit</a>
-              </div>
+              <!-- <button type="button" class="btn btn-secondary ms-auto" data-bs-dismiss="modal">Close</button> -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#trackingApproval"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" class="feather feather-eye text-pirmary me-1">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>Show Tracking Approval</button>
+              <!-- edit button will showing when status is "open" -->
+              <a href="form-pengajuan.html" type="button" class="btn btn-warning">Edit</a>
             </div>
           </div>
         </div>
-
-        <!-- Modal Box Attachment Realized -->
-        <div class="modal fade" id="attachmentRealized" tabindex="-1" aria-labelledby="attachmentRealizedLabel"
-          aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="attachmentRealizedLabel">Lampiran</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <div class="mb-3">
-                  <label for="formFile" class="form-label">Upload Attachment</label>
-                  <input class="form-control" type="file" id="formFile">
-                </div>
-                <div class="mb-3">
-                  <label for="inputTotal" class="mb-2">Total</label>
-                  <div class="input-group flex-nowrap"> <span class="input-group-text" id="addon-wrapping">Rp.</span>
-                    <input id="inputTotal" type="number" class="form-control" placeholder="Biaya..." aria-label="total"
-                      aria-describedby="addon-wrapping">
-                  </div>
-                </div>
-
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="submit" class="btn btn-success">Submit</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
       </div>
+
+      <!-- Modal Box Attachment Realized -->
+      <div class="modal fade" id="attachmentRealized" tabindex="-1" aria-labelledby="attachmentRealizedLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="attachmentRealizedLabel">Lampiran</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="mb-3">
+                <label for="formFile" class="form-label">Upload Attachment</label>
+                <input class="form-control" type="file" id="formFile">
+              </div>
+              <div class="mb-3">
+                <label for="inputTotal" class="mb-2">Total</label>
+                <div class="input-group flex-nowrap"> <span class="input-group-text" id="addon-wrapping">Rp.</span>
+                  <input id="inputTotal" type="number" class="form-control" placeholder="Biaya..." aria-label="total"
+                    aria-describedby="addon-wrapping">
+                </div>
+              </div>
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-success">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
-    <!--end page wrapper -->
-    <!--start overlay-->
-    <div class="overlay toggle-icon"></div>
-    <!--end overlay-->
-    <!--Start Back To Top Button-->
-    <a href="javaScript:;" class="back-to-top"><i class="bx bxs-up-arrow-alt"></i></a>
-    <!--End Back To Top Button-->
-    <footer class="page-footer">
-      <p class="mb-0">Copyright © 2023. All right reserved.</p>
-    </footer>
+  </div>
+  <!--end page wrapper -->
+  <!--start overlay-->
+  <div class="overlay toggle-icon"></div>
+  <!--end overlay-->
+  <!--Start Back To Top Button-->
+  <a href="javaScript:;" class="back-to-top"><i class="bx bxs-up-arrow-alt"></i></a>
+  <!--End Back To Top Button-->
+  <footer class="page-footer">
+    <p class="mb-0">Copyright © 2023. All right reserved.</p>
+  </footer>
   </div>
   <!--end wrapper-->
   <!-- Bootstrap JS -->
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <!--plugins-->
   <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/plugins/simplebar/js/simplebar.min.js"></script>
+  <!-- <script src="assets/plugins/simplebar/js/simplebar.min.js"></script> -->
   <script src="assets/plugins/metismenu/js/metisMenu.min.js"></script>
   <script src="assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
-  <script src="assets/plugins/vectormap/jquery-jvectormap-2.0.2.min.js"></script>
-  <script src="assets/plugins/vectormap/jquery-jvectormap-world-mill-en.js"></script>
-  <script src="assets/plugins/highcharts/js/highcharts.js"></script>
+  <!-- <script src="assets/plugins/vectormap/jquery-jvectormap-2.0.2.min.js"></script>
+  <script src="assets/plugins/vectormap/jquery-jvectormap-world-mill-en.js"></script> -->
+  <!-- <script src="assets/plugins/highcharts/js/highcharts.js"></script>
   <script src="assets/plugins/highcharts/js/exporting.js"></script>
   <script src="assets/plugins/highcharts/js/variable-pie.js"></script>
   <script src="assets/plugins/highcharts/js/export-data.js"></script>
-  <script src="assets/plugins/highcharts/js/accessibility.js"></script>
-  <script src="assets/plugins/apexcharts-bundle/js/apexcharts.min.js"></script>
-  <script src="assets/js/index2.js"></script>
+  <script src="assets/plugins/highcharts/js/accessibility.js"></script> -->
+  <!-- <script src="assets/plugins/apexcharts-bundle/js/apexcharts.min.js"></script> -->
+  <!-- <script src="assets/js/index2.js"></script> -->
   <script src="assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
   <script src="assets/plugins/datatable/js/dataTables.bootstrap5.min.js"></script>
   <script src="assets/libraries/gijgo/js/gijgo.min.js"></script>
   <!--app JS-->
   <script src="assets/js/app.js"></script>
-  <script>
-    new PerfectScrollbar(".customers-list");
-    new PerfectScrollbar(".store-metrics");
-    new PerfectScrollbar(".product-list");
-  </script>
+
   <script>
     $(document).ready(function () {
       var table = $('#dataPengajuan').DataTable();

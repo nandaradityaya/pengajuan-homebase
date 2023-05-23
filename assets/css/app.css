@@ -2233,7 +2233,8 @@ a {
 
 .authentication-header {
   position: absolute;
-  background: #037de2;
+  /* background: #037de2; */
+  background: #348d5b;
   top: 0;
   left: 0;
   right: 0;
