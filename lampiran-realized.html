@@ -167,13 +167,13 @@
       <div class="page-content">
         <!--breadcrumb-->
         <div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
-          <div class="breadcrumb-title pe-3">Pengajuan</div>
+          <div class="breadcrumb-title pe-3">Lampiran</div>
           <div class="ps-3">
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb mb-0 p-0">
                 <li class="breadcrumb-item"><a href="dashboard.html"><i class="bx bx-home-alt"></i></a>
                 </li>
-                <li class="breadcrumb-item active" aria-current="page">Data Pengajuan</li>
+                <li class="breadcrumb-item active" aria-current="page">Data Approved</li>
               </ol>
             </nav>
           </div>
@@ -183,14 +183,8 @@
 
         <div class="card">
           <div class="card-body">
-            <div class="d-flex align-items-center mb-3">
-              <div>
-                <h5 class="font-weight-bold mb-0">Data Pengajuan</h5>
-              </div>
-              <div class="ms-auto mt-2">
-                <a href="form-pengajuan.html" type="button" class="btn btn-primary radius-10"><i
-                    class="bx bx-plus"></i>Tambah</a>
-              </div>
+            <div class="mb-3 text-center">
+              <h5 class="font-weight-bold mb-0">Data Pengajuan</h5>
             </div>
 
             <div class="table-responsive">
@@ -199,19 +193,22 @@
                 <thead class="table-light">
                   <tr>
                     <th>No. Pengajuan</th>
-
+                    <th>NIK</th>
+                    <th>Nama</th>
                     <th>Tgl Keberangkatan</th>
                     <th>Tgl Cuti</th>
                     <th>Home Base</th>
                     <th>Lokasi Penugasan</th>
                     <th>Status</th>
                     <th>View Details</th>
+                    <th>Action</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td>987654321</td>
-
+                    <td>220100966</td>
+                    <td>Rifky Rachmadilla</td>
                     <td>12-05-2023</td>
                     <td>12-05-2023 s/d 22-05-2023</td>
                     <td>Makasar</td>
@@ -223,73 +220,32 @@
                     <td><button type="button" class="btn btn-primary btn-sm radius-30 px-4" data-bs-toggle="modal"
                         data-bs-target="#modalViewDetails">View
                         Details</button></td>
+                    <td class="d-flex order-actions">
+                      <a type="button" class="text-primary bg-light-primary border-0" data-bs-toggle="modal"
+                        data-bs-target="#attachmentRealized"><i class="bx bx-upload"></i></a>
+                    </td>
 
 
                   </tr>
                   <tr>
                     <td>987654321</td>
-
+                    <td>230100022</td>
+                    <td>Nanda Raditya</td>
                     <td>12-05-2023</td>
                     <td>12-05-2023 s/d 22-05-2023</td>
-                    <td>Makasar</td>
-                    <td>Surabaya</td>
+                    <td>Aceh</td>
+                    <td>Samarinda</td>
                     <td>
                       <div class="badge rounded-pill text-success bg-light-success p-2 text-uppercase px-3">
                         Approved</div>
                     </td>
-
                     <td><button type="button" class="btn btn-primary btn-sm radius-30 px-4" data-bs-toggle="modal"
                         data-bs-target="#modalViewDetails">View
                         Details</button></td>
-
-                  </tr>
-                  <tr>
-                    <td>987654321</td>
-
-                    <td>12-05-2023</td>
-                    <td>12-05-2023 s/d 22-05-2023</td>
-                    <td>Makasar</td>
-                    <td>Surabaya</td>
-                    <td>
-                      <div class="badge rounded-pill text-white bg-secondary p-2 text-uppercase px-3">
-                        Open</div>
+                    <td class="d-flex order-actions">
+                      <a type="button" class="text-primary bg-light-primary border-0" data-bs-toggle="modal"
+                        data-bs-target="#attachmentRealized"><i class="bx bx-upload"></i></a>
                     </td>
-                    <td><button type="button" class="btn btn-primary btn-sm radius-30 px-4" data-bs-toggle="modal"
-                        data-bs-target="#modalViewDetails">View
-                        Details</button></td>
-
-                  </tr>
-                  <tr>
-                    <td>987654321</td>
-
-                    <td>12-05-2023</td>
-                    <td>12-05-2023 s/d 22-05-2023</td>
-                    <td>Makasar</td>
-                    <td>Surabaya</td>
-                    <td>
-                      <div class="badge rounded-pill text-warning bg-light-warning p-2 text-uppercase px-3">
-                        In Progress</div>
-                    </td>
-                    <td><button type="button" class="btn btn-primary btn-sm radius-30 px-4" data-bs-toggle="modal"
-                        data-bs-target="#modalViewDetails">View
-                        Details</button></td>
-
-                  </tr>
-                  <tr>
-                    <td>987654321</td>
-
-                    <td>12-05-2023</td>
-                    <td>12-05-2023 s/d 22-05-2023</td>
-                    <td>Makasar</td>
-                    <td>Surabaya</td>
-                    <td>
-                      <div class="badge rounded-pill text-danger bg-light-danger p-2 text-uppercase px-3">
-                        Rejected</div>
-                    </td>
-                    <td><button type="button" class="btn btn-primary btn-sm radius-30 px-4" data-bs-toggle="modal"
-                        data-bs-target="#modalViewDetails">View
-                        Details</button></td>
-
 
                   </tr>
 
@@ -297,13 +253,15 @@
                 <tfoot class="table-light">
                   <tr>
                     <th>No. Pengajuan</th>
-
+                    <th>NIK</th>
+                    <th>Nama</th>
                     <th>Tgl Keberangkatan</th>
                     <th>Tgl Cuti</th>
                     <th>Home Base</th>
                     <th>Lokasi Penugasan</th>
                     <th>Status</th>
                     <th>View Details</th>
+                    <th>Action</th>
                   </tr>
                 </tfoot>
               </table>
@@ -404,11 +362,6 @@
 
             </div>
             <div class="modal-body">
-              <!-- <a data-bs-toggle="modal" data-bs-target="#trackingApproval" type="button"
-                  class="d-flex justify-content-center"><span style="color: #ffc107"><i
-                      class="lni lni-warning me-1 font-18"></i></span>Show
-                  Tracking Approval
-                  <span style="color: #ffc107"><i class="lni lni-warning ms-1 font-18"></i></span></a> -->
               <div class="row ">
                 <div class="col-lg-6 col-md-12 col-sm-12 mb-3">
                   <label for="disabledNIK">NIK</label>
@@ -507,21 +460,7 @@
               </div>
             </div>
             <div class="modal-footer">
-              <!-- <a data-bs-toggle="modal" data-bs-target="#trackingApproval" type="button"
-                  class="d-flex justify-content-end  me-2"><span style="color: #ffc107"><i
-                      class="lni lni-warning me-1 font-18"></i></span>Show
-                  Tracking Approval
-                  <span style="color: #ffc107"><i class="lni lni-warning ms-1 font-18"></i></span></a> -->
-              <!-- <button type="button" class="btn btn-secondary ms-auto" data-bs-dismiss="modal">Close</button> -->
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                data-bs-target="#trackingApproval"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                  stroke-linejoin="round" class="feather feather-eye text-pirmary me-1">
-                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                  <circle cx="12" cy="12" r="3"></circle>
-                </svg>Show Tracking Approval</button>
-              <!-- edit button will showing when status is "open" -->
-              <a href="form-pengajuan.html" type="button" class="btn btn-warning">Edit</a>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
             </div>
           </div>
         </div>
