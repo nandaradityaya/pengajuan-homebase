@@ -25,7 +25,7 @@
   <title>Web Title</title>
 </head>
 
-<body>
+<body onresize="focusReize(1)">
   <!--wrapper-->
   <div class="wrapper">
     <!--sidebar wrapper -->
@@ -65,7 +65,7 @@
         <li>
           <a href="lampiran-realized.html">
             <div class="parent-icon"><i class="bx bx-upload"></i></div>
-            <div class="menu-title">Unggah Lampiran</div>
+            <div class="menu-title">Realisasi</div>
           </a>
         </li>
       </ul>
@@ -200,12 +200,13 @@
                     <th>Home Base</th>
                     <th>Lokasi Penugasan</th>
                     <th>Total Biaya</th>
+                    <th>Tgl Pengajuan Terakhir</th>
                     <th>Detail</th>
                     <th>Action</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
+                  <tr data-bs-toggle="modal" data-bs-target="#modalApprove" style="cursor: pointer;">
                     <td>987654321</td>
                     <td>230100022</td>
                     <td>Nanda Raditya</td>
@@ -214,8 +215,9 @@
                     <td>Makasar</td>
                     <td>Surabaya</td>
                     <td>Rp. 3.000.000</td>
+                    <td>24-04-2021</td>
                     <td><button type="button" class="btn btn-primary btn-sm radius-30 px-4" data-bs-toggle="modal"
-                        data-bs-target="#viewDetail">View
+                        data-bs-target="#modalViewDetails">View
                         Details</button></td>
                     <td>
                       <div class="d-flex order-actions">
@@ -228,7 +230,7 @@
                       </div>
                     </td>
                   </tr>
-                  <tr>
+                  <tr data-bs-toggle="modal" data-bs-target="#modalApprove" style="cursor: pointer;">
                     <td>879653782</td>
                     <td>230100045</td>
                     <td>Mathew Judianto</td>
@@ -237,8 +239,9 @@
                     <td>Jakarta</td>
                     <td>Aceh</td>
                     <td>Rp. 4.800.000</td>
+                    <td>19-03-2021</td>
                     <td><button type="button" class="btn btn-primary btn-sm radius-30 px-4" data-bs-toggle="modal"
-                        data-bs-target="#viewDetail">View
+                        data-bs-target="#modalViewDetails">View
                         Details</button></td>
                     <td>
                       <div class="d-flex order-actions">
@@ -262,6 +265,7 @@
                     <th>Home Base</th>
                     <th>Lokasi Penugasan</th>
                     <th>Total Biaya</th>
+                    <th>Tgl Pengajuan Terakhir</th>
                     <th>Detail</th>
                     <th>Action</th>
                   </tr>
@@ -271,13 +275,14 @@
           </div>
         </div>
 
-        <!-- Modal Box View Detail -->
-        <div class="modal fade" id="viewDetail" tabindex="-1" aria-labelledby="viewDetailLabel" aria-hidden="true">
-          <div class="modal-dialog">
+        <!-- Modal Box View Details -->
+        <div class="modal fade" id="modalViewDetails" tabindex="-1" aria-labelledby="modalViewDetailsLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="viewDetailLabel">Details</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h5 class="modal-title" id="modalViewDetailsLabel">View Detail</h5>
+
               </div>
               <div class="modal-body">
                 <div class="row ">
@@ -317,6 +322,10 @@
                       <p class="font-weight-bold">05/26/2023</p>
                     </div>
                   </div>
+                </div>
+                <div class="mb-3">
+                  <p class="mb-0">Lampiran</p>
+                  <a type="button" class="text-blue"><i class="fadeIn animated bx bx-download me-1"></i>Download</a>
                 </div>
                 <div class="row mb-3">
                   <label>Moda Transportasi</label>
@@ -448,9 +457,25 @@
   <script src="assets/plugins/datatable/js/dataTables.bootstrap5.min.js"></script>
   <!--app JS-->
   <script src="assets/js/app.js"></script>
+  <script src="assets/js/potion-custom.js"></script>
   <script>
     $(document).ready(function () {
       var table = $('#dataApproval').DataTable();
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      const isVisited = localStorage.getItem('guidecachename') == null;
+      if (isVisited) {
+        localStorage.setItem('guidecachename', '');
+
+        guideText = [
+          "This is the guide text for the first step",
+          "This is the guide text for the second step",
+          "This is the guide text for the third step",
+        ]
+        focusCardGuide(3);
+      }
     });
   </script>
 </body>

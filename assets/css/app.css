@@ -3210,3 +3210,9 @@ input::placeholder {
 .font-weight-bold {
   font-weight: 700 !important;
 }
+
+@media print {
+  .btn-print {
+    display: none;
+  }
+}

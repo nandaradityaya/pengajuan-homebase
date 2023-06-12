@@ -17,9 +17,9 @@ a {
   color: #037de2;
 }
 
-.table-responsive {
+/* .table-responsive {
   white-space: nowrap;
-}
+} */
 
 .form-check-input:checked {
   background-color: #037de2;

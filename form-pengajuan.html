@@ -67,7 +67,7 @@
         <li>
           <a href="lampiran-realized.html">
             <div class="parent-icon"><i class="bx bx-upload"></i></div>
-            <div class="menu-title">Unggah Lampiran</div>
+            <div class="menu-title">Realisasi</div>
           </a>
         </li>
       </ul>
@@ -231,8 +231,40 @@
                 </div>
               </div>
             </div>
+            <div class="card mb-3">
+              <div class="card-body">
+                <p class="mb-0">Pilih Anggota Keluarga Yang Ikut</p>
+                <hr>
+                <div class="row">
+                  <div class="col-lg-3 col-md-12 col-sm-12">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="checkbox1">
+                      <label class="form-check-label" for="checkbox1">Hana Tirtawijaya</label>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-12 col-sm-12">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="checkbox2">
+                      <label class="form-check-label" for="checkbox2">Andrea Jonathan</label>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-12 col-sm-12">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="checkbox3">
+                      <label class="form-check-label" for="checkbox3">Mathew Judianto</label>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-12 col-sm-12">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="checkbox4">
+                      <label class="form-check-label" for="checkbox4">Rifky Rachmadilla</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="mb-3">
-              <label for="formFile" class="form-label">Unggah Lampiran</label>
+              <label for="formFile" class="form-label">Unggah Form Kesediaan Mutasi</label>
               <input class="form-control" type="file" id="formFile">
             </div>
             <div class="row mb-3">
@@ -260,7 +292,8 @@
                   <tbody>
                     <tr>
 
-                      <td><input type="text" class="form-control" id="jenis1" value="Tiket Berangkat" disabled></td>
+                      <td><input type="text" class="form-control" id="jenis1" value="Tiket Pesawat Berangkat" disabled>
+                      </td>
                       <td><input id="quantityUdara1" type="number" class="form-control" placeholder="Quantity..."
                           oninput="calculateUdara(1)"></td>
                       <td>
@@ -279,7 +312,8 @@
                       </td>
                     </tr>
                     <tr>
-                      <td><input type="text" class="form-control" id="jenis2" value="Taxi Berangkat" disabled></td>
+                      <td><input type="text" class="form-control" id="jenis2" value="Tiket Pesawat Pulang" disabled>
+                      </td>
                       <td><input id="quantityUdara2" type="number" class="form-control" placeholder="Quantity..."
                           oninput="calculateUdara(2)"></td>
                       <td>
@@ -298,8 +332,9 @@
                       </td>
                     </tr>
                     <tr>
-                      <td><input type="text" class="form-control" id="jenis3" value="Tiket Pulang" disabled></td>
-                      <td><input id="quantityUdara3" type="number" class="form-control" placeholder="Quantity..."
+                      <td><input type="text" class="form-control" id="jenis3" value="Taxi Online/Offline (PP)" disabled>
+                      </td>
+                      <td><input id="quantityUdara3" type="number" class="form-control" value="1" disabled
                           oninput="calculateUdara(3)"></td>
                       <td>
                         <div class="input-group flex-nowrap"> <span class="input-group-text"
@@ -317,7 +352,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td><input type="text" class="form-control" id="jenis4" value="Taxi Pulang" disabled></td>
+                      <td><input type="text" class="form-control" id="jenis4" placeholder="Biaya Lainnya..."></td>
                       <td><input id="quantityUdara4" type="number" class="form-control" placeholder="Quantity..."
                           oninput="calculateUdara(4)"></td>
                       <td>
@@ -331,25 +366,6 @@
                         <div class="input-group flex-nowrap"> <span class="input-group-text"
                             id="addon-wrapping">Rp.</span>
                           <input id="totalUdara4" type="number" class="form-control" placeholder="Total..."
-                            aria-label="total" aria-describedby="addon-wrapping" readonly>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td><input type="text" class="form-control" id="jenis5" placeholder="Biaya Lainnya..."></td>
-                      <td><input id="quantityUdara5" type="number" class="form-control" placeholder="Quantity..."
-                          oninput="calculateUdara(5)"></td>
-                      <td>
-                        <div class="input-group flex-nowrap"> <span class="input-group-text"
-                            id="addon-wrapping">Rp.</span>
-                          <input id="hargaUdara5" type="number" class="form-control" placeholder="Biaya..."
-                            aria-label="harga" aria-describedby="addon-wrapping" oninput="calculateUdara(5)">
-                        </div>
-                      </td>
-                      <td>
-                        <div class="input-group flex-nowrap"> <span class="input-group-text"
-                            id="addon-wrapping">Rp.</span>
-                          <input id="totalUdara5" type="number" class="form-control" placeholder="Total..."
                             aria-label="total" aria-describedby="addon-wrapping" readonly>
                         </div>
                       </td>
@@ -369,6 +385,7 @@
               </div>
             </div>
             <div class="row mb-3 content" id="content-darat" style="display: none;">
+              <div class="d-flex justify-content-end">*Kosongkan yang tidak perlu</div>
               <div class="table-responsive">
                 <table class="table mb-0">
                   <thead>
@@ -382,8 +399,8 @@
                   <tbody>
                     <tr>
 
-                      <td><input type="text" class="form-control" id="jenis1" value="Bensin" disabled></td>
-                      <td><input id="quantity1" type="number" class="form-control" placeholder="Quantity..."
+                      <td><input type="text" class="form-control" id="jenis1" value="Bensin (PP)" disabled></td>
+                      <td><input id="quantity1" type="number" class="form-control" value="1" disabled
                           oninput="calculateDarat(1)"></td>
                       <td>
                         <div class="input-group flex-nowrap"> <span class="input-group-text"
@@ -401,8 +418,8 @@
                       </td>
                     </tr>
                     <tr>
-                      <td><input type="text" class="form-control" id="jenis2" value="Tol" disabled></td>
-                      <td><input id="quantity2" type="number" class="form-control" placeholder="Quantity..."
+                      <td><input type="text" class="form-control" id="jenis2" value="Tol (PP)" disabled></td>
+                      <td><input id="quantity2" type="number" class="form-control" value="1" disabled
                           oninput="calculateDarat(2)"></td>
                       <td>
                         <div class="input-group flex-nowrap"> <span class="input-group-text"
@@ -420,7 +437,8 @@
                       </td>
                     </tr>
                     <tr>
-                      <td><input type="text" class="form-control" id="jenis3" value="Tiket Kapal" disabled></td>
+                      <td><input type="text" class="form-control" id="jenis3" value="Tiket Kapal Berangkat" disabled>
+                      </td>
                       <td><input id="quantity3" type="number" class="form-control" placeholder="Quantity..."
                           oninput="calculateDarat(3)"></td>
                       <td>
@@ -439,7 +457,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td><input type="text" class="form-control" id="jenis4" value="Tiket Bus" disabled></td>
+                      <td><input type="text" class="form-control" id="jenis4" value="Tiket Kapal Pulang" disabled></td>
                       <td><input id="quantity4" type="number" class="form-control" placeholder="Quantity..."
                           oninput="calculateDarat(4)"></td>
                       <td>
@@ -458,7 +476,8 @@
                       </td>
                     </tr>
                     <tr>
-                      <td><input type="text" class="form-control" id="jenis5" value="Taxi" disabled></td>
+                      <td><input type="text" class="form-control" id="jenis5" value="Tiket Bus/Travel Berangkat"
+                          disabled></td>
                       <td><input id="quantity5" type="number" class="form-control" placeholder="Quantity..."
                           oninput="calculateDarat(5)"></td>
                       <td>
@@ -477,7 +496,8 @@
                       </td>
                     </tr>
                     <tr>
-                      <td><input type="text" class="form-control" id="jenis6" placeholder="Biaya Lainnya..."></td>
+                      <td><input type="text" class="form-control" id="jenis6" value="Tiket Bus/Travel Pulang" disabled>
+                      </td>
                       <td><input id="quantity6" type="number" class="form-control" placeholder="Quantity..."
                           oninput="calculateDarat(6)"></td>
                       <td>
@@ -496,11 +516,91 @@
                       </td>
                     </tr>
                     <tr>
+                      <td><input type="text" class="form-control" id="jenis7" value="Tiket Kereta Berangkat" disabled>
+                      </td>
+                      <td><input id="quantity7" type="number" class="form-control" placeholder="Quantity..."
+                          oninput="calculateDarat(7)"></td>
+                      <td>
+                        <div class="input-group flex-nowrap"> <span class="input-group-text"
+                            id="addon-wrapping">Rp.</span>
+                          <input id="harga7" type="number" class="form-control" placeholder="Biaya..."
+                            aria-label="harga" aria-describedby="addon-wrapping" oninput="calculateDarat(7)">
+                        </div>
+                      </td>
+                      <td>
+                        <div class="input-group flex-nowrap"> <span class="input-group-text"
+                            id="addon-wrapping">Rp.</span>
+                          <input id="total7" type="number" class="form-control" placeholder="Total..."
+                            aria-label="total" aria-describedby="addon-wrapping" readonly>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><input type="text" class="form-control" id="jenis8" value="Tiket Kereta Pulang" disabled>
+                      </td>
+                      <td><input id="quantity8" type="number" class="form-control" placeholder="Quantity..."
+                          oninput="calculateDarat(8)"></td>
+                      <td>
+                        <div class="input-group flex-nowrap"> <span class="input-group-text"
+                            id="addon-wrapping">Rp.</span>
+                          <input id="harga8" type="number" class="form-control" placeholder="Biaya..."
+                            aria-label="harga" aria-describedby="addon-wrapping" oninput="calculateDarat(8)">
+                        </div>
+                      </td>
+                      <td>
+                        <div class="input-group flex-nowrap"> <span class="input-group-text"
+                            id="addon-wrapping">Rp.</span>
+                          <input id="total8" type="number" class="form-control" placeholder="Total..."
+                            aria-label="total" aria-describedby="addon-wrapping" readonly>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><input type="text" class="form-control" id="jenis9" value="Taxi Online/Offline (PP)" disabled>
+                      </td>
+                      <td><input id="quantity9" type="number" class="form-control" value="1" disabled
+                          oninput="calculateDarat(9)"></td>
+                      <td>
+                        <div class="input-group flex-nowrap"> <span class="input-group-text"
+                            id="addon-wrapping">Rp.</span>
+                          <input id="harga9" type="number" class="form-control" placeholder="Biaya..."
+                            aria-label="harga" aria-describedby="addon-wrapping" oninput="calculateDarat(9)"
+                            onchange="formatCurrency(this)">
+                        </div>
+                      </td>
+                      <td>
+                        <div class="input-group flex-nowrap"> <span class="input-group-text"
+                            id="addon-wrapping">Rp.</span>
+                          <input id="total9" type="number" class="form-control" placeholder="Total..."
+                            aria-label="total" aria-describedby="addon-wrapping" readonly>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><input type="text" class="form-control" id="jenis10" placeholder="Biaya Lainnya..."></td>
+                      <td><input id="quantity10" type="number" class="form-control" placeholder="Quantity..."
+                          oninput="calculateDarat(10)"></td>
+                      <td>
+                        <div class="input-group flex-nowrap"> <span class="input-group-text"
+                            id="addon-wrapping">Rp.</span>
+                          <input id="harga10" type="number" class="form-control" placeholder="Biaya..."
+                            aria-label="harga" aria-describedby="addon-wrapping" oninput="calculateDarat(10)">
+                        </div>
+                      </td>
+                      <td>
+                        <div class="input-group flex-nowrap"> <span class="input-group-text"
+                            id="addon-wrapping">Rp.</span>
+                          <input id="total10" type="number" class="form-control" placeholder="Total..."
+                            aria-label="total" aria-describedby="addon-wrapping" readonly>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
                       <td colspan="3">Total Keseluruhan</td>
                       <td>
                         <div class="input-group flex-nowrap">
                           <span class="input-group-text" id="addon-wrapping">Rp.</span>
-                          <input id="grandTotal" type="number" class="form-control" placeholder="Total..."
+                          <input id="grandTotalDarat" type="number" class="form-control" placeholder="Total..."
                             aria-label="total" aria-describedby="addon-wrapping" readonly>
                         </div>
                       </td>
@@ -516,43 +616,6 @@
                 <textarea class="form-control" id="keterangan" placeholder="Masukkan keterangan..." rows="3"></textarea>
               </div>
             </div>
-            <!-- <label for="" class="form-label">Rincian Biaya</label>
-            <div class="card">
-              <div class="card-body">
-                <div id="rincian-biaya">
-                  <div class="row mb-3">
-                    <div class="col-lg-6 col-md-12 col-sm-12 mb-3">
-                      <label for="rincian1" class="form-label">Rincian 1</label>
-                      <input type="text" class="form-control" id="rincian1" placeholder="Rincian...">
-                    </div>
-                    <div class="col-lg-6 col-md-12 col-sm-12 mb-3">
-                      <label for="biaya1" class="form-label">Biaya 1</label>
-                      <div class="input-group flex-nowrap"> <span class="input-group-text"
-                          id="addon-wrapping">Rp.</span>
-                        <input id="biaya1" type="number" class="form-control biaya" placeholder="Biaya..."
-                          aria-label="biaya" aria-describedby="addon-wrapping">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="d-flex justify-content-end">
-                  <button id="add-btn" class="btn btn-primary radius-5"><i class="bx bx-plus"></i>Tambah
-                    Rincian</button>
-                </div>
-                <hr>
-                <div class="row">
-                  <div class="col-12">
-                    <label for="totalBiaya" class="form-label">Total Biaya</label>
-                    <div class="input-group flex-nowrap"> <span class="input-group-text" id="addon-wrapping">Rp.</span>
-                      <input id="totalBiaya" type="number" class="form-control" placeholder="Total Biaya..."
-                        aria-label="biaya" aria-describedby="addon-wrapping">
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div> -->
 
             <div class="text-center">
               <button type="button" class="btn btn-primary radius-5" data-bs-toggle="modal"
@@ -635,34 +698,6 @@
     });
   </script>
   <script>
-    const addBtn = document.getElementById('add-btn');
-    const rincianBiaya = document.getElementById('rincian-biaya');
-
-    let i = 1;
-
-    addBtn.addEventListener('click', () => {
-      i++;
-      const newRow = document.createElement('div');
-      newRow.classList.add('row', 'mb-3');
-      newRow.innerHTML = `
-    <div class="col-lg-6 col-md-12 col-sm-12 mb-3">
-      <label for="rincian${i}" class="form-label">Rincian ${i}</label>
-      <input type="text" class="form-control" id="rincian${i}" placeholder="rincian...">
-    </div>
-    <div class="col-lg-6 col-md-12 col-sm-12 mb-3">
-      <label for="biaya${i}" class="form-label">Biaya ${i}</label>
-      <div class="input-group flex-nowrap"> <span class="input-group-text" id="addon-wrapping">Rp.</span>
-        <input id="biaya${i}" type="number" class="form-control biaya" placeholder="biaya..." aria-label="biaya"
-          aria-describedby="addon-wrapping">
-      </div>
-    </div>
-  `;
-      rincianBiaya.appendChild(newRow);
-    });
-
-
-  </script>
-  <script>
     $('.single-select').select2({
       theme: 'bootstrap4',
       width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
@@ -688,52 +723,54 @@
   </script>
   <script>
     function calculateDarat(row) {
-      var quantity = document.getElementById("quantity" + row).value;
-      var harga = document.getElementById("harga" + row).value;
+      var quantity = parseFloat(document.getElementById("quantity" + row).value);
+      var harga = parseFloat(document.getElementById("harga" + row).value);
       var total = quantity * harga;
       document.getElementById("total" + row).value = total;
 
-      calculateGrandTotal(); // Memanggil fungsi untuk menghitung grand total
+      calculateGrandTotalDarat(); // Memanggil fungsi untuk menghitung total keseluruhan
     }
 
-    function calculateGrandTotal() {
-      var grandTotal = 0;
+    function calculateGrandTotalDarat() {
+      var grandTotal = 0; // Inisialisasi total keseluruhan
 
-      // Mengambil nilai total dari setiap baris dan menjumlahkannya
-      var rows = document.getElementsByTagName("tr");
-      for (var i = 0; i < rows.length - 1; i++) {
-        var total = parseInt(document.getElementById("total" + (i + 1)).value);
-        if (!isNaN(total)) {
-          grandTotal += total;
-        }
+      // Mendapatkan semua elemen input dengan ID yang dimulai dengan "total"
+      var totalInputs = document.querySelectorAll('[id^="total"]');
+
+      // Menghitung total keseluruhan dengan menjumlahkan total dari setiap baris
+      for (var i = 0; i < totalInputs.length; i++) {
+        var total = parseFloat(totalInputs[i].value) || 0; // Mendapatkan nilai total dari input
+        grandTotal += total; // Menambahkan nilai total ke grandTotal
       }
 
-      document.getElementById("grandTotal").value = grandTotal;
+      // Mengatur nilai total keseluruhan pada input dengan ID "grandTotal"
+      document.getElementById("grandTotalDarat").value = grandTotal;
     }
   </script>
 
   <script>
     function calculateUdara(row) {
-      var quantity = document.getElementById("quantityUdara" + row).value;
-      var harga = document.getElementById("hargaUdara" + row).value;
+      var quantity = parseFloat(document.getElementById("quantityUdara" + row).value);
+      var harga = parseFloat(document.getElementById("hargaUdara" + row).value);
       var total = quantity * harga;
       document.getElementById("totalUdara" + row).value = total;
 
-      calculateGrandTotalUdara(); // Memanggil fungsi untuk menghitung grand total
+      calculateGrandTotal(); // Memanggil fungsi untuk menghitung total keseluruhan
     }
 
-    function calculateGrandTotalUdara() {
-      var grandTotal = 0;
+    function calculateGrandTotal() {
+      var grandTotal = 0; // Inisialisasi total keseluruhan
 
-      // Mengambil nilai total dari setiap baris dan menjumlahkannya
-      var rows = document.getElementsByTagName("tr");
-      for (var i = 0; i < rows.length - 1; i++) {
-        var total = parseInt(document.getElementById("totalUdara" + (i + 1)).value);
-        if (!isNaN(total)) {
-          grandTotal += total;
-        }
+      // Mendapatkan semua elemen input dengan ID yang dimulai dengan "totalUdara"
+      var totalInputs = document.querySelectorAll('[id^="totalUdara"]');
+
+      // Menghitung total keseluruhan dengan menjumlahkan total dari setiap baris
+      for (var i = 0; i < totalInputs.length; i++) {
+        var total = parseFloat(totalInputs[i].value) || 0; // Mendapatkan nilai total dari input
+        grandTotal += total; // Menambahkan nilai total ke grandTotal
       }
 
+      // Mengatur nilai total keseluruhan pada input dengan ID "grandTotal"
       document.getElementById("grandTotal").value = grandTotal;
     }
   </script>
